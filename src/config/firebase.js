@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyACXHSCMHBb04sbBZ9JEn0E0gKCmEzCPmM",
-  authDomain: "react-social-fb8e6.firebaseapp.com",
-  projectId: "react-social-fb8e6",
-  storageBucket: "react-social-fb8e6.appspot.com",
-  messagingSenderId: "491528067028",
-  appId: "1:491528067028:web:9bca2dbddd8fc373fa2841",
+  apiKey: "YOUR_API_KEY_HERE",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
 };
 
 // Initialize Firebase
@@ -20,4 +20,4 @@ const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();
-export const db = new getFirestore(app);
+export const db = getFirestore(app);
