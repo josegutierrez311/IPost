@@ -1,0 +1,215 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+.navbar .links {
+  display: flex;  
+  align-items: center;  
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  padding: 10px 15px;  
+  transition: border-color 0.3s;
+}
+
+.links a:hover {
+  border-color: white;
+}
+
+.navbar .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-grow: 1; 
+  margin-left: 20px; 
+  max-width: 300px;  
+}
+
+.user p {
+  margin: 0 20px;  
+  color: white;
+  white-space: nowrap;  
+}
+
+.user img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0px; 
+}
+
+.user button {
+  padding: 5px 10px;
+  background-color: #624de3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user button:hover {
+  background-color: #4931a8;
+}
+
+
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  background-color: slateblue;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.form-container textarea {
+  height: 150px;
+  resize: none; 
+}
+
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+
+.form-container input[type="submit"] {
+  background-color:#624de3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #4931a8;
+}
+
+.post-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.post-container .title h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+
+.post-container .body p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; 
+}
+
+.post-container .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.post-container .footer p {
+  margin: 0; 
+}
+
+.post-container .footer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.post-container .footer p.likes {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.sign-in-message {
+  width: 100%;          
+  padding: 20px;      
+  text-align: center;   
+  background-color: #f8f9fa; 
+  border: 1px solid #dee2e6; 
+  border-radius: 5px;   
+  margin-top: 50px;    
+  font-size: 20px;     
+  color: #495057;       
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
